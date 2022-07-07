@@ -1,0 +1,103 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(108,99,255,1) 0%, rgba(36,0,83,0.1292892156862745) 100%);;
+}
+#marco{
+  animation: 1.5s pop ease backwards;
+}
+#piso{
+  animation: 1.5s entradabottom2 ease backwards 0.8s;
+}
+#personas{
+  animation: 1.5s entradabottom ease backwards 2.2s;
+}
+#telescopio{
+  animation: 3s entradabottom ease backwards 2.4s;
+}
+#planta1{
+  animation: 3s entradaright ease backwards 4.3s;
+}
+#planta2{
+  animation: 3s entradaleft ease backwards 5.3s;
+}
+#universo{
+  animation: 3s entradatop ease backwards 7.3s;
+}
+#estrella1,#estrella4,#estrella7,#estrella10,#estrella13,#estrella16{
+  opacity: 0;
+  animation:.6s pop infinite ease-in-out alternate 11s;
+}
+#estrella2,#estrella5,#estrella8,#estrella11,#estrella14,#estrella9{
+  opacity: 0;
+  animation:.6s pop infinite ease-in-out alternate 11.2s;
+}
+#estrella3,#estrella6,#estrella12,#estrella15,#estrella17{
+  opacity: 0;
+  animation:.6s pop infinite ease-in-out alternate 11.4s;
+}
+
+@keyframes entradabottom {
+  from{
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to{
+    transform: unset;
+    opacity: 1;
+  }
+}
+@keyframes entradabottom2 {
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: unset;
+    opacity: 1;
+  }
+}
+@keyframes entradatop {
+  from{
+    transform: translateY(-250px);
+  }
+  to{
+    transform: unset;
+  }
+}
+@keyframes entradaright {
+  from{
+    transform: translateX(600px);
+    opacity: 0;
+  }
+  to{
+    transform: unset;
+    opacity: 1;
+  }
+}
+@keyframes entradaleft {
+  from{
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+  to{
+    transform: unset;
+    opacity: 1;
+  }
+}
+@keyframes pop{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
